@@ -1,0 +1,32 @@
+.navbar.navbar-light.fixed-top.navbar-expand-md
+  .container
+    a.navbar-brand(href='/')
+      i.fab.fa-linode
+      | Alex's Node Template
+    button.navbar-toggler(type='button', data-toggle='collapse', data-target='.navbar-collapse')
+      span.sr-only Toggle navigation
+      span.navbar-toggler-icon
+    .collapse.navbar-collapse
+      ul.nav.navbar-nav
+        li.nav-item(class=(title === 'Home') ? 'active' : undefined)
+          a.nav-link(href='/') Home
+        li.nav-item(class=(title === 'Contact') ? 'active' : undefined)
+          a.nav-link(href='/contact') Contact
+        li.nav-item(class=(title === 'Contact') ? 'active' : undefined).social-list
+          div.social-container.col-sm-12
+            .floating-buttons
+                a(href="https://www.facebook.com/4abrown/")
+                    .facebook
+                        i.fab.fa-facebook-f
+                a(href="http://m.me/4abrown/")
+                    .facebook-message
+                        i.fas.fa-comments
+                a(href="mailto:alexbrownfour@gmail.com")
+                    .email
+                        i.fas.fa-envelope
+                a(href="tel:")
+                    .phone
+                        i.fas.fa-phone
+
+.scroll-to-top
+    a(href='#top').btn.btn-primary Scroll to top
